@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <div data-include="includes/header.html"></div>
+    <main>
+        <div class="card-group">
+          <div class="card">
+            <img src="/assets/images/pacientes.jpeg" class="card-img-top" alt="Imagen de pacientes">
+            <div class="card-body">
+              <h5 class="card-title">Pacientes</h5>
+              <p class="card-text">Encuentra toda la información sobre nuestros pacientes y servicios médicos disponibles.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+              <a href="formulario.html?type=pacientes" id="pacientes" class="btn btn-primary">Registrar Pacientes</a>
+              <a href="consultarPacientes.html" id="consultarPacientes" class="btn btn-primary">Consultar Pacientes</a>
+
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/images/medicos.jpeg" class="card-img-top" alt="Imagen de médicos">
+            <div class="card-body">
+              <h5 class="card-title">Médicos</h5>
+              <p class="card-text">Conoce a nuestro equipo médico altamente capacitado y especializado en diversas áreas.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+              <a id="medicos" href="formulario.html?type=medicos" class="btn btn-primary">Registrar Médicos</a>
+              <a href="consultarMedicos.html" id="consultarMedicos" class="btn btn-primary">Consultar Médicos</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/images/citas.jpeg" class="card-img-top" alt="Imagen de citas">
+            <div class="card-body">
+              <h5 class="card-title">Citas</h5>
+              <p class="card-text">Agenda tu cita con nuestros profesionales de la salud para recibir la atención que necesitas.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+              <a href="url-citas" class="btn btn-primary">Ir a Citas</a> <!-- Reemplaza "url-citas" con la URL correspondiente -->
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/images/especialidades.jpeg" class="card-img-top" alt="Imagen de citas">
+            <div class="card-body">
+              <h5 class="card-title">Especialidades</h5>
+              <p class="card-text">Encontrarás una amplia gama de especialidades médicas disponibles para brindarte la atención que necesitas.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+              <a href="url-citas" class="btn btn-primary">Resgitrar Especialidades</a> <!-- Reemplaza "url-citas" con la URL correspondiente -->
+            </div>
+        </div>
+      </main>
+    <br>
+    <div data-include="includes/footer.html"></div>
+    <script src="/javaScript/headerandfooter.js"></script>
+    <script src="/javaScript/index.js"></script>
+    <script src="/javaScript/formEngine.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+footer {
+    margin-bottom: 0;
+  }
+
+
+  .navbar-brand img {
+    max-height: 50px; /* Ajusta la altura máxima del logo */
+    max-width: 100%; /* Ajusta el ancho máximo del logo */
+  }
+
+  @media (max-width: 576px) {
+    /* Estilos para pantallas pequeñas (dispositivos móviles) */
+    .navbar-brand img {
+      max-height: 40px; /* Ajusta la altura máxima del logo para pantallas pequeñas */
+    }
+  }
+
+  .card-img-top {
+    padding-top: 2em;
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card {
+    text-align: center;
+  }
