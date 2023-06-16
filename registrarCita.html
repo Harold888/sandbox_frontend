@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Cita</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div data-include="includes/header.html"></div>
+    <div class="container">
+        <h1 class="text-center text-primary">Registrar Cita</h1>
+
+        <form id="citaForm">
+            <div class="form-group">
+                <label for="medicoSelect">Médico:</label>
+                <select class="form-control" id="medicoSelect" name="medico">
+                    <!-- Opciones de médicos se llenarán dinámicamente -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pacienteSelect">Paciente:</label>
+                <select class="form-control" id="pacienteSelect" name="paciente">
+                    <!-- Opciones de pacientes se llenarán dinámicamente -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fechaInput">Fecha:</label>
+                <input type="date" class="form-control" id="fechaInput" name="fecha">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Registrar Cita</button>
+        </form>
+    </div>
+    <br>
+    <div data-include="includes/footer.html"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/javaScript/headerandfooter.js"></script>
+    <script src="/javaScript/citas.js"></script>
+</body>
+</html>

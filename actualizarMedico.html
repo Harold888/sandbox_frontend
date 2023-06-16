@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actualizar Médico</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div data-include="includes/header.html"></div>
+  <div class="container">
+    <h1 class="text-center text-primary">Actualizar Médico</h1>
+
+    <form id="updateForm">
+      <div class="form-group">
+        <label for="tarjetaProfesional">Tarjeta Profesional:</label>
+        <input type="number" class="form-control" id="tarjetaProfesionalInput" name="tarjetaProfesional" required>
+      </div>
+
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombreInput" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" class="form-control" id="apellidoInput" name="apellido" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo:</label>
+        <input type="email" class="form-control" id="correoInput" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="consultorio">Consultorio:</label>
+        <input type="text" class="form-control" id="consultorioInput" name="consultorio" required>
+      </div>
+
+      <div class="form-group">
+        <label for="especialidad">Especialidad:</label>
+        <input type="number" class="form-control" id="especialidadInput" name="especialidad" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+  </div>
+  <br>
+  <div data-include="includes/footer.html"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/javaScript/headerandfooter.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/javaScript/actualizarMedico.js"></script>
+    <script src="/javaScript/headerandfooter.js"></script>
+</body>
+</html>

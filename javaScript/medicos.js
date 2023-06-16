@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       accionesCell.appendChild(deleteIcon);
       const editIcon = document.createElement("i");
       editIcon.classList.add("fas", "fa-edit");
+      editIcon.addEventListener("click", () => redirigirAFormulario(tarjetaProfesional)); // Agregar evento de click
       accionesCell.appendChild(editIcon);
       row.appendChild(accionesCell);
 
@@ -121,9 +122,7 @@ function mostrarMensaje(mensaje) {
   modalInstance.show();
 }
 
-function actualizarTablaMedicos() {
-  const medicosTable = document.getElementById("medicosTable");
-  medicosTable.innerHTML = "";
-  // Cargar médicos y generar la tabla nuevamente
-  // ...
+function redirigirAFormulario(tarjetaProfesional) {
+  window.location.href = `actualizarMedico.html?tarjetaProfesional=${tarjetaProfesional}`;
 }
+
